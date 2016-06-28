@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Тестовый сайт</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="shortcut icon" href="img/logoicon.png" type="image/png">
+	<link href='https://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="slider/jquery.animateSlider.css">
+</head>
+<body>
+	<div id="headerback">
+		<div id="header">			
+			<div class="logo">
+				<a href="#" title="Ebpaint"></a>
+			</div> <!-- closed logo -->
+
+			<div class="namecom">
+				<a href="#" title="Ebpaint">
+					<p> 
+						ebpaint
+					</p>
+				</a>
+			</div> <!-- closed namecom -->
+
+			<div class="headernavig">				
+            	<ul class="navigr">
+                	<li><a href="index.html" title="Home" class="home"><strong>HOME</strong></a></li>
+               		<li><a href="#" title="Portfolio" class="portcont"><strong>PORTFOLIO</strong></a></li>
+                	<li><a href="#" title="About" class="portcont"><strong>ABOUT</strong></a></li>
+               		<li><a href="#" title="Blog" class="portcont"><strong>BLOG</strong></a></li>
+               		<li><a href="#" title="Contact" class="portcont"><strong>CONTACT</strong></a></li>
+            	</ul>
+        	</div> <!-- closed headernavig -->			
+		</div> <!-- closed header -->
+	</div> <!-- closed headerback -->
+
+	<div id="sliderback">
+		<div id="slidercont">
+			<ul class="anim-slider">
+			<!-- Slide No1 -->
+				<li class="anim-slide">
+					<p id="slider">We are Webpaint</p>
+					<p id="plugin">digital & branding agency based in Jupiter and we would <br> love to turn ideas into beautiful things.</p>			
+					<a href="#" id="license" title="See Portfolio">SEE PORTFOLIO</a>			
+				</li>		
+				<!-- Slide No2 -->
+				<li class="anim-slide">
+					<h3 id="todo">Slide No2</h3>			
+					<h3 id="lightspeed">Slide No2</h3>
+					<h4 id="zoomup">Slide No2</h4>
+					<h4 id="bounceRight">Slide No2</h4>			
+					<h3 id="rollin">Slide No2</h3>
+					<h4 id="fadeUp">Slide No2</h4>
+					<h4 id="fadeDown">Slide No2</h4>			
+					<h3 id="rotate">Slide No2</h3>
+					<h4 id="rotateRight">Slide No2</h4>
+					<h4 id="rotateLeft">Slide No2</h4>
+				</li>
+				<!-- Slide No3 -->
+				<li class="anim-slide">			
+					<h2 id="animatecss">Slide No3</h2>
+				</li>
+			</ul>
+
+			<!-- Arrows -->
+			<nav class="anim-arrows">
+				<span class="anim-arrows-prev"></span>
+				<span class="anim-arrows-next"></span>
+			</nav>
+			<!-- Dynamically created dots -->
+			
+			<!-- Bower Depedencies -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/modernizr.js"></script>	
+			<!-- Load the plugin -->
+			<script src="js/jquery.animateSlider.js"></script>
+			<script>
+			 $(".anim-slider").animateSlider(
+			 	{
+			 		autoplay	:true,
+			 		interval	:5000,
+			 		animations 	: 
+					{
+						0	: 	//Slide No1
+						{
+							"#slider": 
+							{
+								show   	  : "bounceIn",
+								hide 	  : "zoomOutUpBig",
+								delayShow : "delay1s"
+		 					},
+		 					"#plugin":
+		 					{
+		 						show 	  : "fadeInUpLeftLarge",
+								hide 	  : "fadeOutDownBig",
+								delayShow : "delay1-5s"
+		 					},
+		 					"#license" 	:
+		 					{
+								show   	  : "zoomInUpRightLarge",
+								hide 	  : "fadeOutRightBig",
+								delayShow : "delay1-5s"
+		 					},
+						},
+						1	: //Slide No2
+						{	
+							"#todo":
+							{
+								show 		: "fadeIn",
+								hide 		: "fadeOut",
+								delayShow   : "delay0-5s"
+							},
+							"#lightspeed" 	:
+							{
+								show 	 	: "lightSpeedIn",
+								hide 	 	: "lightSpeedOut",
+								delayShow 	: "delay2s"
+							},
+							"#zoomup":
+							{
+								show 	 	: "zoomInUpRightBig",
+								hide 	 	: "bounceOutLeft",
+								delayShow 	: "delay2-5s"
+							},
+							"#bounceRight":
+							{
+								show 	 	: "bounceInDownRightLarge",
+								hide 	 	: "bounceOutRight",
+								delayShow 	: "delay3s"
+							},
+							"#rollin" :
+							{
+								show 	 	: "rollIn",
+								hide 	 	: "rollOut",
+								delayShow 	: "delay3-5s"
+							},
+							"#fadeUp":
+							{
+								show 	 	: "fadeInUpBig",
+								hide 	 	: "hinge",
+								delayShow 	: "delay4s"
+							},
+							"#fadeDown":
+							{
+								show 	 	: "fadeInDownBig",
+								hide 	 	: "fadeOutDownBig",
+								delayShow 	: "delay4-5s"	
+							},
+							"#rotate" :
+							{
+								show 	 	: "rotateIn",
+								hide 	 	: "rotateOut",
+								delayShow 	: "delay5-5s"
+							},
+							"#rotateRight" :
+							{
+								show 	 	: "rotateInUpRight",
+								hide 	 	: "rotateOutDownRight",
+								delayShow 	: "delay6s"
+							},
+							"#rotateLeft" :
+							{
+								show 	 	: "rotateInUpLeft",
+								hide 	 	: "rotateOutDownLeft",
+								delayShow 	: "delay6-5s"
+							}
+						},
+						2	: //Slide No3
+						{						
+							"#animatecss"	: 
+							{
+								show 	  : "lightSpeedIn",
+								hide 	  : "flipOutY",
+								delayShow : "delay2-5s"
+							}
+						}
+					}
+			 	});
+			</script>
+		</div> <!-- closed slidercont -->
+	</div> <!-- closed sliderback -->
+
+	<div id="servicebakg">
+		<div id="services">
+			 <div class="consectetur">
+				<a href="#" class="consecteturback" title="Consectetur"></a>
+				<a href="#" title="Consectetur"><h1>Consectetur</h1></a>
+				<p>Vestibulum id ligula porta  euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
+			</div>
+
+			<div class="tristiquet">
+				<a href="#" class="trisbakg" title="Tristiquet"></a>
+				<a href="#" title="Tristiquet"><h1>Tristiquet</h1></a>
+				<p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
+			</div>
+
+			<div class="fermentum">
+				<a href="#" class="fermbakg" title="Fermentum"></a>
+				<a href="#" title="Fermentum"><h1>Fermentum</h1></a>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
+			</div> 
+
+			<div class="elitultricies">
+				<a href="#" class="elitbakg" title="Elit Ultricies"></a>
+				<a href="#" title="Elit Ultricies"><h1>Elit Ultricies</h1></a>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet.</p>
+			</div>			
+		</div> <!-- closed services -->
+	</div><!-- closed servicebakg -->
+
+	<div id="portfolioback">
+
+		<div id="portfolio">
+			<h1>Our Featured Works</h1>
+			<p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
+
+			<div class="portfolionavig">
+				<ul class="portnavigr">
+                	<li><a href="#" title="All"><strong>ALL</strong></a></li>
+               		<li><a href="#" title="Graphic" ><strong>GRAPHIC</strong></a></li>
+                	<li><a href="#" title="Illustration"><strong>ILLUSTRATION</strong></a></li>
+               		<li><a href="#" title="Motion"><strong>MOTION</strong></a></li>
+               	</ul>
+			</div>
+
+			<div class="thumbnail">
+				<a href="#" title="Layer 1"><img alt="layer1" src="img/layer1.png"></a>
+				<a href="#" title="Layer 2"><img alt="layer2" src="img/layer2.png"></a>
+				<a href="#" title="Layer 3"><img alt="layer3" src="img/layer3.png"></a>
+				<a href="#" title="Layer 4"><img alt="layer4" src="img/layer4.png"></a>
+				<a href="#" title="Layer 5"><img alt="layer5" src="img/layer5.png"></a>
+				<a href="#" title="Layer 6"><img alt="layer6" src="img/layer6.png"></a>
+				<a href="#" title="Layer 7"><img alt="layer7" src="img/layer7.png"></a>
+				<a href="#" title="Layer 8"><img alt="layer8" src="img/layer8.png"></a>
+				<a href="#" title="Layer 9"><img alt="layer9" src="img/layer9.png"></a>
+				<a href="#" title="Layer 10"><img alt="layer10" src="img/layer10.png"></a>
+				<a href="#" title="Layer 11"><img alt="layer11" src="img/layer11.png"></a>
+				<a href="#" title="Layer 12"><img alt="layer12" src="img/layer12.png"></a>
+			</div>			
+		</div> <!-- closed portfolio -->
+	</div> <!-- closed portfolioback -->
+
+		<div id="footerbakg">
+			<div class="footer">
+				<h1>Get in Touch</h1>
+				<p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+				<div id="cont">
+					<div class="address">
+						<p> <a href="#" title="Address"> <img alt="fill" src="img/fill.png"></a> &nbsp; Moonshine Street No: 14/05 Light City, Jupiter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="phone" src="img/phone.png">&nbsp;&nbsp;0247 541 65 87</p>
+					</div>
+				</div>
+			</div>   <!-- closed footer -->
+		</div> <!-- closed footerbakg -->
+
+		<div id="copirightback">
+			<div class="copiright">
+				<p>@ 2013 Webpaint. All Rights Reserved.</p>
+			</div>		
+		</div> <!-- closed copirightback -->
+</body>
+</html>
